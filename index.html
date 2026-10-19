@@ -80,7 +80,7 @@ p{margin:0 0 1em}
 /* ================= hero band ================= */
 .sliderBlock{
   width:100%;
-  height:clamp(320px,52vw,660px);
+  height:clamp(220px,32vw,420px);
   border-top:1px solid var(--hairline);
   border-bottom:1px solid var(--hairline);
   overflow:hidden;
@@ -238,7 +238,7 @@ p.readmore a::after{content:" \203A";font-size:15px;padding-left:6px}
 
 <!-- ================= HERO BAND ================= -->
 <div class="sliderBlock" aria-label="Animated neural network illustration">
-<svg viewBox="0 0 680 520" role="img" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block">
+<svg viewBox="0 0 680 520" role="img" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;display:block">
 <title>Neural network in the style of Yayoi Kusama (animated)</title>
 <desc>A neural network of polka-dotted neurons on a blue crackle background. The neurons appear one by one and dot-chain signals flow continuously along the connections.</desc>
 <defs>
@@ -275,7 +275,8 @@ p.readmore a::after{content:" \203A";font-size:15px;padding-left:6px}
 </pattern>
 </defs>
 
-<rect x="0" y="0" width="680" height="520" fill="url(#crackle)"/>
+<!-- oversized so the crackle pattern fills the band on both sides of the (uncropped) drawing -->
+<rect x="-4000" y="-4000" width="8680" height="8520" fill="url(#crackle)"/>
 
 <g fill="none" stroke="#161014" stroke-linecap="round" opacity="0">
 <animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.8s" fill="freeze"/>
